@@ -1,0 +1,44 @@
+/* Mood type styles */
+.mood-color {
+    font-weight: bold;
+    color: rebeccapurple;
+}
+.happy-mood-color {
+    background-color: #ffeb3b; /* Bright yellow for happiness */
+    color: #000; /* Black text for contrast */
+}
+
+.sad-mood-color {
+    background-color: #90caf9; /* Soft blue for sadness */
+    color: #fff; /* White text for readability */
+}
+
+.calm-mood-color {
+    background-color: #a5d6a7; /* Gentle green for calmness */
+    color: #000; /* Black text for contrast */
+}
+
+.excited-mood-color {
+    background-color: #ff7043; /* Vibrant orange for excitement */
+    color: #fff; /* White text for readability */
+}
+/* Button styles */
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #ddd; /* Light gray on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+button:active {
+    transform: scale(0.95); /* Slightly shrink on click */
+    background-color: #ccc; /* Darker gray on click */
+}

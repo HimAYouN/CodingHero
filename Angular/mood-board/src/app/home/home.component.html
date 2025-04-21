@@ -1,1 +1,11 @@
 <p>home works!</p>
+<h3>Hi {{userName}}</h3>
+
+<div>
+    <button (click)="selectMood(mood)" *ngFor="let mood of moods" >{{mood}}</button>
+
+    <h3  *ngIf = "showSelectedMood" class="mood-color" [ngClass]="{
+        'happy-mood-color': selectedMood === 'happy'
+    }"> Selected Mood: {{selectedMood}}</h3>
+    <!-- <h3  *ngIf = "!selectedMood"> Selected Mood: {{selectedMood}}</h3> -->
+</div>
