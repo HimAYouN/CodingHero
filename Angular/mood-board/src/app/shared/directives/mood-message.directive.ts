@@ -14,11 +14,12 @@ export class MoodMessageDirective {
   
 
 
-  constructor(){ }
+  constructor(){}
 
   getMoodMessage(): any{
-    if(this.mood && this.moodMessages(this.mood)) return this.moodMessages(this.mood)
-    
+    if(this.mood && this.moodMessages[this.mood]){ 
+      return this.moodMessages[this.mood]
+    }
 
   }
 }
