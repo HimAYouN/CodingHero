@@ -1,11 +1,36 @@
-<p>home works!</p>
-<h3>Hi {{userName }}</h3>
+<div class="homeDiv">
+    <div class="topDiv">
+        <!-- <p>home works!</p> -->
+        <h3>Hi {{ userName }}</h3>
+        <!-- <form action="submit"> -->
+            <label>Enter you name:</label>
+            <input type="text" [(ngModel)] = "userName">
+            <h3>{{userName}}</h3>
+            <!-- <button>Submit</button> -->
 
-<div>
-    <button (click)="selectMood(mood)" *ngFor="let mood of moods" >{{mood}}</button>
-
-    <h3  *ngIf = "showSelectedMood" class="mood-color" [ngClass]="{
-        'happy-mood-color': selectedMood === 'happy'
-    }"> Selected Mood: {{selectedMood | moodEmoji}}</h3>
-    <h1 *ngIf="isMoodMessage">Message from {{userName}}: {{moodMessage}}</h1>
+        <!-- </form> -->
+        
+      </div>
+      <div class="bottomDiv">
+        <div class="buttonDiv">
+            <button (click)="selectMood(mood)" *ngFor="let mood of moods" class="mood-button">
+                {{ mood }}
+              </button>
+        </div>
+      
+        <h3
+          *ngIf="showSelectedMood"
+          class="mood-display"
+          [ngClass]="{
+            'happy-mood': selectedMood === 'happy',
+            'sad-mood': selectedMood === 'sad',
+            'calm-mood': selectedMood === 'calm',
+            'excited-mood': selectedMood === 'excited',
+          }"
+        >
+          Selected Mood: {{ selectedMood | moodEmoji }}
+        </h3>
+        <h1 *ngIf="isMoodMessage" class="mood-message">Message from Larry_(BOT): {{ moodMessage }}</h1>
+      </div>
+      
 </div>

@@ -1,11 +1,29 @@
 import { Routes } from '@angular/router';
+import { HomeComponent } from '../app/home/home.component';
 
-export const routes: Routes = [{
+export const routes: Routes = [
+{
     path: '',
     loadComponent: () => import ('../app/home/home.component').then(m => m.HomeComponent)
 },
 {
-    path: 'calender',
+    path: 'setting',
+    loadComponent: () => import ('../app/home/home.component').then(m => m.HomeComponent)
+},
+{
+    path: 'calendar',
+    loadComponent: () => import('../app/layout/footer/footer.component').then(m => m.FooterComponent)
+},
+  
+{
+    path: 'tasks',
     loadComponent: () => import('../app/layout/footer/footer.component').then(m => m.FooterComponent)
 }
+// {
+//     path: 'home',
+//     redirectTo: '',
+//     pathMatch: 'full',
+//     component: HomeComponent
+// }
+
 ];

@@ -9,6 +9,7 @@ export class MoodEmojiPipe implements PipeTransform {
 
     //H/W : what is any type, and whit will the return type of `const emoMap {happy: '😊', sad: '😟'};
     // type eMap = {[Key in 'happy' ]: string };
+    
     // const emojiMap: {[Key in 'happy']: string} = {
     // const emojiMap = {
       
@@ -21,6 +22,8 @@ export class MoodEmojiPipe implements PipeTransform {
     
     
     // return emojiMap[value] || " ";
+
+
     ///////Solution 1 : Tighten the index
     // const access = (str: keyof typeof emojiMap) => { return emojiMap[str] || ' '} //didn't work as expected
     ///////Solution 2 : Loosen the object type
