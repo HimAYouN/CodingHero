@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { MoodMessageDirective } from '../shared/directives/mood-message.directive';
+import { MoodEmojiPipe } from '../shared/pipes/mood-emoji.pipe';
 
 @Component({
   selector: 'app-home',
-  imports: [CommonModule],
+  imports: [CommonModule, MoodEmojiPipe],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
