@@ -1,9 +1,12 @@
 .footer {
-    display: flex;
-    justify-content: space-between;
-    /* align-items: ; */
-    padding: 1rem 2rem;
-    /* background-color: #f5f5f5; */
-    /* border-bottom: 1px solid #ccc; */
-  }
-  
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: end; */
+  bottom: 0;
+  padding: 1rem 2rem;
+  /* background-color: #f5f5f5; */
+  /* border-bottom: 1px solid #ccc; */
+}

@@ -11,4 +11,6 @@ import { FooterComponent } from "./layout/footer/footer.component";
 })
 export class AppComponent {
   title = 'mood-board';
+  userName: string = 'Hero_01';
+  submittedUsername: string = '';
 }

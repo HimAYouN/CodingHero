@@ -2,14 +2,29 @@
 .homeDiv{
     margin: 20px;
     padding: 30px;
+    height: full;;
 }
 .topDiv{
-    
+    padding: 10px;
     display: flex;
     flex-direction: column;
     gap: 15px;
     justify-content: center;
     align-items: center;
+}
+input {
+  padding: 7px 10px;
+  width: 250px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 .bottomDiv {
     display: flex;
